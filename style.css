@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4f566d, #7aada6);
+    padding: 15px;
+}
+
+.todoapp {
+    width: 100%;
+    background-color: #fff;
+    max-width: 550px;
+    margin: 70px auto 30px;
+    padding: 12px 10px 20px 15px;
+    border-radius: 8px;  
+}
+
+.todoapp h2 {
+    color: #333;
+    padding: 25px 10px 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.todoapp h2 img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.row input {
+    padding: 15px;
+    border: none;
+    background: #eee;
+    border-radius: 8px;
+    width: 100%;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+}
+
+.row button {
+    background-color: #23b634;
+    color: #fff;
+    border: none;
+    border: 1px solid #23ba4b;
+    border-radius: .4rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+ul li {
+    padding: 12px 10px 20px 40px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px 8px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+ul li:not(:first-child){
+    margin-top: 15px;
+}
+
+ul li::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url('imgs/unchecked.png');
+    left: 8px;
+    top: 13px;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #777;
+}
+
+ul li.checked::before {
+    background-image: url('imgs/checked.png');
+}
+
+p {
+    color: red;
+    padding: 12px 10px 12px 8px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 10px 5px 4px 8px rgba(0, 0, 0, 0.07);
+    display: none;
+    cursor: pointer;
+}
+
+ul li img {
+    position: absolute;
+    right: 1%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
